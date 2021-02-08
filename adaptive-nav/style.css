@@ -1,0 +1,97 @@
+body{
+    background-color: #888;
+    font-family: 'Roboto', sans-serif; 
+}
+.wrapper{
+    background: linear-gradient(#444,#666,#444);
+}
+.navbar{
+    
+    display: table;
+    width: 90%;
+    margin:0 auto;
+    
+}
+.wrapper .navbar .brand{
+    padding-right: 3em;
+}
+.wrapper .navbar span{
+    position: absolute;
+    padding: 1em;
+}
+.navbar ul{
+    display: table-row;
+}
+.navbar ul li{
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+   
+}
+.wrapper .navbar ul li.main{
+    text-align: center;
+    padding: 0 0;
+    width: 5em;
+    
+    }
+    .wrapper .navbar ul li.main:nth-child(2){
+        padding-left: 9em;
+        
+    }
+    .wrapper .navbar ul li.contacts{
+    text-align: right;
+    padding: 0.7em;
+    
+    
+    
+    }
+    
+    .wrapper .navbar ul li.contacts:nth-child(6){
+       
+        width: 1em;
+        padding-right: 3em;
+        
+    }
+    
+    .wrapper .navbar ul li.user{
+        text-align: right;
+        padding: 0 -0.4em;
+        width: 2em;
+        
+    }
+    
+.navbar .brand img{
+    height: 3em;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: orange;
+
+}
+@media (max-width:1500px){
+    .wrapper .navbar .brand{
+        padding-right: 1em;
+    }
+    .wrapper .navbar ul li.main:nth-child(2){
+        padding-left: 8em;
+        
+    }
+    .wrapper .navbar ul li.contacts:nth-child(6){
+       
+        width: 1em;
+        padding-right: 2em;
+        
+    }
+}
+  @media(max-width:1000px){
+    .wrapper .navbar ul li.main:nth-child(4) {
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .wrapper .navbar ul li.main:nth-child(3) {
+        display: none;
+    }
+}
